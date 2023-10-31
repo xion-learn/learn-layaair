@@ -87,5 +87,27 @@
   RuntimeScript = __decorateClass([
     regClass3("9d282a42-410d-4be3-9b17-b18942fc8308", "../src/RuntimeScript.ts")
   ], RuntimeScript);
+
+  // src/Animation.ts
+  var { regClass: regClass4, property: property3 } = Laya;
+  var Animation = class extends Laya.Script {
+    constructor() {
+      super();
+    }
+    //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次 
+    onAwake() {
+      this.ani.autoPlay = true;
+      this.ani.wrapMode = 0;
+      this.ani.interval = 50;
+    }
+  };
+  __name(Animation, "Animation");
+  //在IDE面板中显示属性
+  __decorateClass([
+    property3({ type: Laya.Animation })
+  ], Animation.prototype, "ani", 2);
+  Animation = __decorateClass([
+    regClass4("3e0a6acd-9879-4f7a-8fe3-f19b83e1321c", "../src/Animation.ts")
+  ], Animation);
 })();
 //# sourceMappingURL=bundle.js.map
