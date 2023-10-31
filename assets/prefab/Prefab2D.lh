@@ -1,0 +1,23 @@
+{
+  "_$ver": 1,
+  "_$id": "4py669kt95",
+  "_$type": "Box",
+  "name": "Box",
+  "width": 120,
+  "height": 120,
+  "_$child": [
+    {
+      "_$id": "os3ms8hj",
+      "_$type": "Text",
+      "name": "Text",
+      "x": -1,
+      "y": 3,
+      "width": 120,
+      "height": 30,
+      "text": "预制体",
+      "fontSize": 26,
+      "color": "#FFFFFF",
+      "leading": 2
+    }
+  ]
+}

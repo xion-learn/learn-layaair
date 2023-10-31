@@ -94,7 +94,7 @@
     constructor() {
       super();
     }
-    //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次 
+    //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
     onAwake() {
       this.ani.autoPlay = true;
       this.ani.wrapMode = 0;
