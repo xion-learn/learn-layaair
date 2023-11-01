@@ -10,6 +10,9 @@ export class NewScript extends Laya.Script {
     @property(String)
     public text: string = "";
 
+    @property({type: Laya.Prefab, multiline: true})
+    public prefab: Laya.Prefab
+
     private ui : RuntimeScript;
 
     //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
@@ -31,7 +34,10 @@ export class NewScript extends Laya.Script {
     //第一次执行update之前执行，只会执行一次
     onStart(): void {
         console.log('onStart');
-        this.ui.Prefab2D.visible = false
+        this.ui.Panel.visible = false
+
+        const prefab = Laya.Pool.getItemByCreateFun('prefab', this.prefab.create, this.prefab)
+        this.owner.addChild(prefab)
     }
 
     //手动调用节点销毁时执行

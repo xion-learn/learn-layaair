@@ -70,7 +70,9 @@
     //第一次执行update之前执行，只会执行一次
     onStart() {
       console.log("onStart");
-      this.ui.Prefab2D.visible = false;
+      this.ui.Panel.visible = false;
+      const prefab = Laya.Pool.getItemByCreateFun("prefab", this.prefab.create, this.prefab);
+      this.owner.addChild(prefab);
     }
     //手动调用节点销毁时执行
     onDestroy() {
@@ -93,6 +95,9 @@
   __decorateClass([
     property3(String)
   ], NewScript.prototype, "text", 2);
+  __decorateClass([
+    property3({ type: Laya.Prefab, multiline: true })
+  ], NewScript.prototype, "prefab", 2);
   NewScript = __decorateClass([
     regClass3("54f70da5-7fba-4862-ae5a-1387c3dcc30c", "../src/NewScript.ts")
   ], NewScript);
@@ -108,7 +113,7 @@
   var RuntimeScript = class extends RuntimeScriptBase {
     onAwake() {
       this.Animation.on(Laya.Event.MOUSE_DOWN, () => {
-        this.Panel.visible = false;
+        this.Prefab2D.visible = false;
       });
     }
   };
