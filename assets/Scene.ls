@@ -25,6 +25,7 @@
   "_$child": [
     {
       "_$id": "kyb4h9kz",
+      "_$var": true,
       "_$type": "Animation",
       "name": "Animation",
       "x": 297,
@@ -38,11 +39,12 @@
       ],
       "interval": 500,
       "autoPlay": true,
-      "index": 1
+      "index": 2
     },
     {
       "_$id": "lj5hm8zo",
       "_$prefab": "57f0460e-0999-4fc5-bb2c-0494dd090cb2",
+      "_$var": true,
       "name": "Prefab2D",
       "active": true,
       "x": 687,
@@ -51,6 +53,7 @@
     },
     {
       "_$id": "g9sq7orw",
+      "_$var": true,
       "_$type": "Panel",
       "name": "Panel",
       "x": 529,
@@ -60,6 +63,7 @@
       "_$child": [
         {
           "_$id": "wy89dniu",
+          "_$var": true,
           "_$type": "Skeleton",
           "name": "Skeleton",
           "x": 169,
@@ -72,6 +76,7 @@
           "scaleY": 0.3,
           "source": "res://f8f25086-1015-4421-be7e-3aa6e791f5c4",
           "animationName": "flying",
+          "loop": false,
           "preview": true
         }
       ]

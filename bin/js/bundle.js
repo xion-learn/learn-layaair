@@ -57,6 +57,7 @@
     //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
     onAwake() {
       console.log("onAwake");
+      this.ui = this.owner.scene;
     }
     //组件被启用后执行，例如节点被添加到舞台后
     onEnable() {
@@ -69,6 +70,7 @@
     //第一次执行update之前执行，只会执行一次
     onStart() {
       console.log("onStart");
+      this.ui.Prefab2D.visible = false;
     }
     //手动调用节点销毁时执行
     onDestroy() {
@@ -104,6 +106,11 @@
   // src/RuntimeScript.ts
   var { regClass: regClass4 } = Laya;
   var RuntimeScript = class extends RuntimeScriptBase {
+    onAwake() {
+      this.Animation.on(Laya.Event.MOUSE_DOWN, () => {
+        this.Panel.visible = false;
+      });
+    }
   };
   __name(RuntimeScript, "RuntimeScript");
   RuntimeScript = __decorateClass([

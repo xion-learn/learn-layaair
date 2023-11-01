@@ -5,5 +5,9 @@
  * Scene.ls
  */
 export class RuntimeScriptBase extends Laya.Scene {
+    public Animation!: Laya.Animation;
+    public Prefab2D!: Laya.Box;
+    public Panel!: Laya.Panel;
+    public Skeleton!: Laya.Skeleton;
 }
 

@@ -1,3 +1,5 @@
+import { RuntimeScript } from "./RuntimeScript";
+
 const { regClass, property } = Laya;
 
 @regClass()
@@ -8,9 +10,12 @@ export class NewScript extends Laya.Script {
     @property(String)
     public text: string = "";
 
+    private ui : RuntimeScript;
+
     //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
     onAwake(): void {
         console.log('onAwake');
+        this.ui = this.owner.scene as RuntimeScript
     }
 
     //组件被启用后执行，例如节点被添加到舞台后
@@ -26,6 +31,7 @@ export class NewScript extends Laya.Script {
     //第一次执行update之前执行，只会执行一次
     onStart(): void {
         console.log('onStart');
+        this.ui.Prefab2D.visible = false
     }
 
     //手动调用节点销毁时执行
