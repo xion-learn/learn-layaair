@@ -12,7 +12,11 @@
     {
       "_$type": "54f70da5-7fba-4862-ae5a-1387c3dcc30c",
       "scriptPath": "../src/NewScript.ts",
-      "text": ""
+      "text": "",
+      "prefab": {
+        "_$uuid": "57f0460e-0999-4fc5-bb2c-0494dd090cb2",
+        "_$type": "Prefab"
+      }
     },
     {
       "_$type": "3e0a6acd-9879-4f7a-8fe3-f19b83e1321c",
@@ -28,8 +32,8 @@
       "_$var": true,
       "_$type": "Animation",
       "name": "Animation",
-      "x": 297,
-      "y": 141,
+      "x": 768,
+      "y": 14,
       "width": 181,
       "height": 203,
       "images": [
@@ -39,7 +43,7 @@
       ],
       "interval": 500,
       "autoPlay": true,
-      "index": 2
+      "index": 0
     },
     {
       "_$id": "lj5hm8zo",
@@ -47,8 +51,8 @@
       "_$var": true,
       "name": "Prefab2D",
       "active": true,
-      "x": 687,
-      "y": 162,
+      "x": 996,
+      "y": 23,
       "visible": true
     },
     {
@@ -56,8 +60,8 @@
       "_$var": true,
       "_$type": "Panel",
       "name": "Panel",
-      "x": 529,
-      "y": 325,
+      "x": 780,
+      "y": 278,
       "width": 317,
       "height": 221,
       "_$child": [
@@ -78,6 +82,74 @@
           "animationName": "flying",
           "loop": false,
           "preview": true
+        }
+      ]
+    },
+    {
+      "_$id": "w0i099h7",
+      "_$type": "Box",
+      "name": "Box",
+      "x": 87,
+      "y": 87,
+      "width": 200,
+      "height": 200,
+      "_$comp": [
+        {
+          "_$type": "RigidBody"
+        },
+        {
+          "_$type": "BoxCollider",
+          "width": 200,
+          "height": 200
+        }
+      ],
+      "_$child": [
+        {
+          "_$id": "jilbyxh9",
+          "_$type": "Text",
+          "name": "Text",
+          "width": 200,
+          "height": 200,
+          "text": "矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 ",
+          "fontSize": 20,
+          "color": "#FFFFFF",
+          "overflow": "hidden",
+          "wordWrap": true,
+          "leading": 2
+        }
+      ]
+    },
+    {
+      "_$id": "kjx1vj9f",
+      "_$type": "Box",
+      "name": "Box(1)",
+      "x": 88,
+      "y": 326,
+      "width": 200,
+      "height": 200,
+      "_$comp": [
+        {
+          "_$type": "RigidBody"
+        },
+        {
+          "_$type": "BoxCollider",
+          "width": 200,
+          "height": 200
+        }
+      ],
+      "_$child": [
+        {
+          "_$id": "ow0drt53",
+          "_$type": "Text",
+          "name": "Text",
+          "width": 200,
+          "height": 200,
+          "text": "矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 ",
+          "fontSize": 20,
+          "color": "#FFFFFF",
+          "overflow": "hidden",
+          "wordWrap": true,
+          "leading": 2
         }
       ]
     }
