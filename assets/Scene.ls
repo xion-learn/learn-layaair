@@ -86,28 +86,20 @@
       ]
     },
     {
-      "_$id": "w0i099h7",
+      "_$id": "2047tn12",
       "_$type": "Box",
       "name": "Box",
-      "x": 87,
-      "y": 87,
-      "width": 200,
-      "height": 200,
-      "_$comp": [
-        {
-          "_$type": "RigidBody"
-        },
-        {
-          "_$type": "BoxCollider",
-          "width": 200,
-          "height": 200
-        }
-      ],
+      "x": 181,
+      "y": 85,
+      "width": 206,
+      "height": 434,
       "_$child": [
         {
           "_$id": "jilbyxh9",
+          "_$var": true,
           "_$type": "Text",
-          "name": "Text",
+          "name": "Rigid1",
+          "y": -7,
           "width": 200,
           "height": 200,
           "text": "矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 ",
@@ -115,33 +107,25 @@
           "color": "#FFFFFF",
           "overflow": "hidden",
           "wordWrap": true,
-          "leading": 2
-        }
-      ]
-    },
-    {
-      "_$id": "kjx1vj9f",
-      "_$type": "Box",
-      "name": "Box(1)",
-      "x": 88,
-      "y": 326,
-      "width": 200,
-      "height": 200,
-      "_$comp": [
-        {
-          "_$type": "RigidBody"
+          "leading": 2,
+          "_$comp": [
+            {
+              "_$type": "RigidBody"
+            },
+            {
+              "_$type": "BoxCollider",
+              "width": 200,
+              "height": 200
+            }
+          ]
         },
         {
-          "_$type": "BoxCollider",
-          "width": 200,
-          "height": 200
-        }
-      ],
-      "_$child": [
-        {
           "_$id": "ow0drt53",
+          "_$var": true,
           "_$type": "Text",
-          "name": "Text",
+          "name": "Rigid2",
+          "x": 3,
+          "y": 229,
           "width": 200,
           "height": 200,
           "text": "矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 矩形刚体 ",
@@ -149,7 +133,17 @@
           "color": "#FFFFFF",
           "overflow": "hidden",
           "wordWrap": true,
-          "leading": 2
+          "leading": 2,
+          "_$comp": [
+            {
+              "_$type": "RigidBody"
+            },
+            {
+              "_$type": "BoxCollider",
+              "width": 200,
+              "height": 200
+            }
+          ]
         }
       ]
     }
