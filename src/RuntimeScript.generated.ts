@@ -9,5 +9,7 @@ export class RuntimeScriptBase extends Laya.Scene {
     public Prefab2D!: Laya.Box;
     public Panel!: Laya.Panel;
     public Skeleton!: Laya.Skeleton;
+    public Rigid1!: Laya.Text;
+    public Rigid2!: Laya.Text;
 }
 
