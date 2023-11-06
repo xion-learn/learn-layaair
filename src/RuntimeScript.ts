@@ -7,6 +7,7 @@ export class RuntimeScript extends RuntimeScriptBase {
     onAwake() {
         this.Animation.on(Laya.Event.MOUSE_DOWN, () => {
             this.Prefab2D.visible = false
+            Laya.Scene.open("SubScene.ls", false);
         })
     }
 
